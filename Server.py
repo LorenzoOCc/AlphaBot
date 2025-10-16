@@ -33,18 +33,18 @@ while attivo:
     data=connection.recv(BUFFER)#come parametro vuole la dimensione del buffer
 #connection.send(risposta.encode())#manda il messaggio dentro la risposta alla connection(client)
 
-    if keyboard.is_pressed(data.decode()) == 'w':
+    if data.decode() == 'w' and keyboard.is_pressed('w'):
         data.d
         bot.forward()
-    elif keyboard.is_pressed(data.decode()) == 's':
+    elif data.decode() == 's' and keyboard.is_pressed('s'):
         bot.backward()
-    elif keyboard.is_pressed(data.decode()) == 's':
+    elif data.decode() == 'a' and keyboard.is_pressed('a'):
         bot.left()
-    elif keyboard.is_pressed(data.decode()) == 'd':
+    elif data.decode() == 'd' and keyboard.is_pressed('d'):
         bot.right()
-    elif keyboard.is_pressed(data.decode()) == 'space':
+    elif data.decode() == 'space' and keyboard.is_pressed('space'):
         bot.stop()
-    elif keyboard.is_pressed(data.decode()) == 'p':
+    elif data.decode() == 'esc' and keyboard.is_pressed('esc'):
         bot.stop()
         attivo = False
         break
