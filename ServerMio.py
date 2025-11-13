@@ -32,19 +32,19 @@ while True:
             comando = data
             durata = 0
 
-        if comando == "f":
+        if comando == "w":
             bot.forward()
             
-        elif comando == "b":
+        elif comando == "s":
             bot.backward()
 
-        elif comando == "l":
+        elif comando == "a":
             bot.left()
 
-        elif comando == "r":
+        elif comando == "d":
             bot.right()
 
-        elif comando == "s":
+        elif comando == "esc":
             bot.stop()
 
         else:
