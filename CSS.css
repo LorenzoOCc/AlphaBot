@@ -1,0 +1,57 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e274e;   /* grigio scuro ma non troppo */
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;   /* blu intenso */
+    color: #f59e0b;              /* giallo tendente all'arancione */
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Container WSAD */
+.container {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    gap: 10px;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+/* Pulsanti base */
+button {
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    background-color: #2563eb;   /* blu medio */
+    color: #fff;
+}
+
+/* Hover */
+button:hover {
+    transform: scale(1.1);
+    background-color: #374151;   /* grigio scuro elegante */
+    color: #f5900b;              /* giallo-arancio */
+}
+
+/* Posizionamento stile WSAD */
+.btnA { grid-column: 1; grid-row: 2; background-color: #d97f0a;} /* A a sinistra */
+.btnD { grid-column: 3; grid-row: 2; background-color: #d97f0a;} /* D a destra */
+.btnW { grid-column: 2; grid-row: 1; background-color: #d97f0a; }              /* W sopra */
+.btnS { grid-column: 2; grid-row: 2; background-color: #d97f0a; }              /* S sotto */
