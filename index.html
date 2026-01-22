@@ -11,12 +11,25 @@
         Alphabot Comandi
     </header>
     <section>
-        <div class="container">
-            <button type="avanti" class="btnW">W</button>
-            <button type="indietro" class="btnS">S</button>
-            <button type="sinistra" class="btnA">A</button>
-            <button type="destra" class="btnD">D</button>
-        </div>
+        <form method="post" action="/">
+            <div class="container">
+                <!-- <input name="username" placeholder="user"><br>
+                <input name="password" type="password" placeholder="psw" -->
+                <button type="submit" class="btnW">W</button>
+                <button type="submit" class="btnS">S</button> 
+                <button type="submit" class="btnA">A</button>
+                <button type="submit" class="btnD">D</button>
+                </div>
+
+                <label for="scelta">Scegli un'opzione:</label>
+                <select id="scelta" name="scelta">
+                <option value="">-- Seleziona --</option>
+                <option value="Q">Quadrato</option>
+                <option value="T">Triangolo</option>
+                <option value="E">Esse</option>
+                <option value="S">Sommatoria</option>
+                </select>
+        </form>
     </section>
 
     
